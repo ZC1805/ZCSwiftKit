@@ -252,7 +252,7 @@ extension Dictionary {
     func jsonString(abnormalResult: String = "", isFormat: Bool = false) -> String {
         var aimStr = abnormalResult
         if JSONSerialization.isValidJSONObject(self) {
-            var ops: JSONSerialization.WritingOptions = .init(rawValue: 0)
+            var ops: JSONSerialization.WritingOptions = JSONSerialization.WritingOptions(rawValue: 0)
             if isFormat { ops = .prettyPrinted }
             if let data = try? JSONSerialization.data(withJSONObject: self, options: ops) {
                 aimStr = String(data: data, encoding: .utf8) ?? abnormalResult

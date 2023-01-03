@@ -10,17 +10,19 @@ import Foundation
 extension String {
     static func valid(_ any: Any?) -> String {
         var aimValue: String = ""
-        if let xobj = any as? String, !Global.isNull(xobj, isNotCheckNumber: true) {
-            aimValue = xobj
-        }
-        else if let xobj = any as? Character, !Global.isNull(xobj, isNotCheckNumber: true) {
-            aimValue = String(xobj)
-        }
-        else if let xobj = any as? Substring, !Global.isNull(xobj, isNotCheckNumber: true) {
-            aimValue = String(xobj)
-        }
-        else if let xobj = any as? NSAttributedString, !Global.isNull(xobj, isNotCheckNumber: true) {
-            aimValue = xobj.string
+        if !Global.isNull(any, isNotCheckNumber: true) {
+            if let xobj = any as? String {
+                aimValue = xobj
+            }
+            else if let xobj = any as? Character {
+                aimValue = String(xobj)
+            }
+            else if let xobj = any as? Substring {
+                aimValue = String(xobj)
+            }
+            else if let xobj = any as? NSAttributedString {
+                aimValue = xobj.string
+            }
         }
         return aimValue
     }

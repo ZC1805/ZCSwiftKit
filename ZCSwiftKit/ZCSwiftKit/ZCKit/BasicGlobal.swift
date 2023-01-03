@@ -1,10 +1,11 @@
 //
-//  Global.swift
+//  BasicGlobal.swift
 //  ZCSwiftKit
 //
 //  Created by zjy on 2022/12/30.
 //
 
+import UIKit
 import Foundation
 
 class Global {

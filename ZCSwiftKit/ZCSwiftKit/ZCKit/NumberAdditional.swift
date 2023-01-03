@@ -8,8 +8,8 @@
 import Foundation
 
 extension Double {
-    static let double_formatter: NumberFormatter = {
-        let formatter = NumberFormatter.init()
+    private static let double_formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.locale = nil
         formatter.decimalSeparator = "."
@@ -47,8 +47,8 @@ extension Double {
 
 
 extension Float {
-    static let float_formatter: NumberFormatter = {
-        let formatter = NumberFormatter.init()
+    private static let float_formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.locale = nil
         formatter.decimalSeparator = "."
@@ -86,8 +86,8 @@ extension Float {
 
 
 extension NSNumber {
-    static let number_formatter: NumberFormatter = {
-        let formatter = NumberFormatter.init()
+    private static let number_formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.locale = nil
         formatter.decimalSeparator = "."

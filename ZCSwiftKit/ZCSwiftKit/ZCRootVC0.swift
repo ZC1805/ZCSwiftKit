@@ -81,10 +81,12 @@ class ZCRootVC0: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         
         
-        let f: Substring = "null"
-        //let x = ["x":f]
-        let a = String.valid(f)
-        print("xxxxxxxxx->\(a)")
+        let f: CGFloat = 30.8
+        let x = ["x":f]
+        print("xxxxxxxx1->\(x.intValueFor("x"))")
+        
+        
+        print("xxxxxxxx2->\(ZSWid)")
     }
     
     //MARK: UITableViewDataSource

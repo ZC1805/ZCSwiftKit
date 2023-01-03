@@ -17,7 +17,7 @@ extension Data {
     
     func jsonObject(abnormalResult: Any? = nil) -> Any? {
         var aimObject = abnormalResult
-        let ops: JSONSerialization.ReadingOptions = .init(rawValue: 0)
+        let ops: JSONSerialization.ReadingOptions = JSONSerialization.ReadingOptions(rawValue: 0)
         if let object = try? JSONSerialization.jsonObject(with: self, options: ops) {
             aimObject = object
         }
@@ -26,7 +26,7 @@ extension Data {
     
     func jsonArray(abnormalResult: [Any?] = []) -> [Any?] {
         var aimObject = abnormalResult
-        let ops: JSONSerialization.ReadingOptions = .init(rawValue: 0)
+        let ops: JSONSerialization.ReadingOptions = JSONSerialization.ReadingOptions(rawValue: 0)
         if let object = try? JSONSerialization.jsonObject(with: self, options: ops), let xobject = object as? [Any?] {
             aimObject = xobject
         }
@@ -35,7 +35,7 @@ extension Data {
     
     func jsonDictionary(abnormalResult: [AnyHashable : Any?] = [:]) -> [AnyHashable : Any?] {
         var aimObject = abnormalResult
-        let ops: JSONSerialization.ReadingOptions = .init(rawValue: 0)
+        let ops: JSONSerialization.ReadingOptions = JSONSerialization.ReadingOptions(rawValue: 0)
         if let object = try? JSONSerialization.jsonObject(with: self, options: ops), let xobject = object  as? [AnyHashable : Any?] {
             aimObject = xobject
         }

@@ -15,11 +15,11 @@ extension Array {
         return false
     }
     
-    func arrayItemFor(_ index: Int?) -> [Any?] {
-        var aimItem: [Any?] = []
+    func arrayItemFor(_ index: Int?) -> [Element?] {
+        var aimItem: [Element?] = []
         if isValidJsonIndexInt(index) {
             let obj = self[index!]
-            if let xobj = obj as? [Any?] {
+            if let xobj = obj as? [Element?] {
                 aimItem = xobj
             }
         }
@@ -216,9 +216,9 @@ extension Array {
 
 
 extension Array {
-    static func valid(_ any: Any?) -> [Any?] {
-        var aimValue: [Any?] = []
-        if let xobj = any as? [Any?] {
+    static func valid(_ any: Any?) -> [Element?] {
+        var aimValue: [Element?] = []
+        if let xobj = any as? [Element?] {
             aimValue = xobj
         }
         return aimValue
@@ -242,7 +242,7 @@ extension Array {
     func jsonString(abnormalResult: String = "", isFormat: Bool = false) -> String {
         var aimStr = abnormalResult
         if JSONSerialization.isValidJSONObject(self) {
-            var ops: JSONSerialization.WritingOptions = .init(rawValue: 0)
+            var ops: JSONSerialization.WritingOptions = JSONSerialization.WritingOptions(rawValue: 0)
             if isFormat { ops = .prettyPrinted }
             if let data = try? JSONSerialization.data(withJSONObject: self, options: ops) {
                 aimStr = String(data: data, encoding: .utf8) ?? abnormalResult

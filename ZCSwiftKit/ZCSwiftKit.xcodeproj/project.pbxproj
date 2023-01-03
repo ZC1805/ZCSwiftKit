@@ -17,8 +17,9 @@
 		58D676B6295AC088006341B0 /* DictionaryAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676B5295AC088006341B0 /* DictionaryAdditional.swift */; };
 		58D676BB295D94AC006341B0 /* StringAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676BA295D94AC006341B0 /* StringAdditional.swift */; };
 		58D676BD295D94BF006341B0 /* DataAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676BC295D94BF006341B0 /* DataAdditional.swift */; };
-		58D676BF295E8756006341B0 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676BE295E8756006341B0 /* Global.swift */; };
+		58D676BF295E8756006341B0 /* BasicGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676BE295E8756006341B0 /* BasicGlobal.swift */; };
 		58D676C1295EB77D006341B0 /* NumberAdditional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676C0295EB77D006341B0 /* NumberAdditional.swift */; };
+		58D676C429644499006341B0 /* BasicMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D676C329644499006341B0 /* BasicMacro.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +35,9 @@
 		58D676B5295AC088006341B0 /* DictionaryAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryAdditional.swift; sourceTree = "<group>"; };
 		58D676BA295D94AC006341B0 /* StringAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringAdditional.swift; sourceTree = "<group>"; };
 		58D676BC295D94BF006341B0 /* DataAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAdditional.swift; sourceTree = "<group>"; };
-		58D676BE295E8756006341B0 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		58D676BE295E8756006341B0 /* BasicGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGlobal.swift; sourceTree = "<group>"; };
 		58D676C0295EB77D006341B0 /* NumberAdditional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberAdditional.swift; sourceTree = "<group>"; };
+		58D676C329644499006341B0 /* BasicMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMacro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,17 +74,26 @@
 				58B23EE3294C624800E32622 /* ZCRootVC0.swift */,
 				58B23EF5294C68F700E32622 /* ZCRootVC1.swift */,
 				58B23EF7294C691300E32622 /* ZCRootVC2.swift */,
-				58D676BE295E8756006341B0 /* Global.swift */,
-				58D676C0295EB77D006341B0 /* NumberAdditional.swift */,
-				58D676BC295D94BF006341B0 /* DataAdditional.swift */,
-				58D676BA295D94AC006341B0 /* StringAdditional.swift */,
-				58D676B3295AC049006341B0 /* ArrayAdditional.swift */,
-				58D676B5295AC088006341B0 /* DictionaryAdditional.swift */,
+				58D676C229643082006341B0 /* ZCKit */,
 				58B23EF3294C670700E32622 /* Launch.storyboard */,
 				58B23EE8294C624A00E32622 /* Assets.xcassets */,
 				58B23EED294C624A00E32622 /* Info.plist */,
 			);
 			path = ZCSwiftKit;
+			sourceTree = "<group>";
+		};
+		58D676C229643082006341B0 /* ZCKit */ = {
+			isa = PBXGroup;
+			children = (
+				58D676C329644499006341B0 /* BasicMacro.swift */,
+				58D676BE295E8756006341B0 /* BasicGlobal.swift */,
+				58D676C0295EB77D006341B0 /* NumberAdditional.swift */,
+				58D676BC295D94BF006341B0 /* DataAdditional.swift */,
+				58D676BA295D94AC006341B0 /* StringAdditional.swift */,
+				58D676B3295AC049006341B0 /* ArrayAdditional.swift */,
+				58D676B5295AC088006341B0 /* DictionaryAdditional.swift */,
+			);
+			path = ZCKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58D676BF295E8756006341B0 /* Global.swift in Sources */,
+				58D676BF295E8756006341B0 /* BasicGlobal.swift in Sources */,
 				58D676B6295AC088006341B0 /* DictionaryAdditional.swift in Sources */,
 				58B23EE4294C624800E32622 /* ZCRootVC0.swift in Sources */,
+				58D676C429644499006341B0 /* BasicMacro.swift in Sources */,
 				58D676BD295D94BF006341B0 /* DataAdditional.swift in Sources */,
 				58B23EE0294C624800E32622 /* AppDelegate.swift in Sources */,
 				58D676C1295EB77D006341B0 /* NumberAdditional.swift in Sources */,
