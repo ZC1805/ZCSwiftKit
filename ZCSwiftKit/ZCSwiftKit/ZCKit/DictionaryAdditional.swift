@@ -216,7 +216,7 @@ extension Dictionary {
 
 
 extension Dictionary {
-    static func valid(_ any: Any?) -> [Key : Value?] {
+    static func validDictionary(_ any: Any?) -> [Key : Value?] {
         var aimValue: [Key : Value?] = [:]
         if let xobj = any as? [Key : Value?] {
             aimValue = xobj

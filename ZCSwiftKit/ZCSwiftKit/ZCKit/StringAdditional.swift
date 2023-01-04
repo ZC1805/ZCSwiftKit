@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-    static func valid(_ any: Any?) -> String {
+    static func validString(_ any: Any?) -> String {
         var aimValue: String = ""
         if !Global.isNull(any, isNotCheckNumber: true) {
             if let xobj = any as? String {

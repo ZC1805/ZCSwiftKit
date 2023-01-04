@@ -216,7 +216,7 @@ extension Array {
 
 
 extension Array {
-    static func valid(_ any: Any?) -> [Element?] {
+    static func validArray(_ any: Any?) -> [Element?] {
         var aimValue: [Element?] = []
         if let xobj = any as? [Element?] {
             aimValue = xobj

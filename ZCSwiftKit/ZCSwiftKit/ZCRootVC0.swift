@@ -74,8 +74,9 @@ class ZCRootVC0: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         self.datas.append(["title": "哈哈", "desc": "描述"])
         self.initialTableView()
-        
         self.view.addSubview(listView)
+        
+        
         
         
         
@@ -86,7 +87,7 @@ class ZCRootVC0: UIViewController, UITableViewDataSource, UITableViewDelegate {
         print("xxxxxxxx1->\(x.intValueFor("x"))")
         
         
-        print("xxxxxxxx2->\(ZSWid)")
+        print("xxxxxxxx2->\(kWid)")
     }
     
     //MARK: UITableViewDataSource

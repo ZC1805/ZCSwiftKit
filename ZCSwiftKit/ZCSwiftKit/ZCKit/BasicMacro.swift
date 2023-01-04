@@ -11,9 +11,9 @@ import Foundation
 func Adapt(_ radix: CGFloat) -> CGFloat { ((radix) * kRadio375) }
 func Image(_ name: String) -> UIImage { UIImage(named: name) ?? UIImage()}
 
-func ArrNonnil(_ arr: Any?) -> [Any?] { Array.valid(arr) }
-func StrNonnil(_ str: Any?) -> String { String.valid(str) }
-func DicNonnil(_ dic: Any?) -> [AnyHashable : Any?] { Dictionary.valid(dic) }
+func ArrNonnil(_ arr: Any?) -> [Any?] { Array.validArray(arr) }
+func StrNonnil(_ str: Any?) -> String { String.validString(str) }
+func DicNonnil(_ dic: Any?) -> [AnyHashable : Any?] { Dictionary.validDictionary(dic) }
 
 let kWid: CGFloat = min(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
 let kHei: CGFloat = max(UIScreen.main.bounds.size.width, UIScreen.main.bounds.size.height)
